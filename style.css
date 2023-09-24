@@ -1,0 +1,41 @@
+/*
+ * style.css
+ *
+ * CSC309 Assignment 1
+ * 
+ * University of Toronto
+ * Fall 2023
+ *
+ */
+    /* Style the header */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .navbar{
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
+    }
+
+    .home-title{
+        font-size: x-large;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+
+    .banner{
+        background-image: linear-gradient(to right, #a517ba, #5f1782);
+        color: white;
+    }
+
+
