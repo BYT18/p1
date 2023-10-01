@@ -41,7 +41,7 @@
                 <li><a class="dropdown-item" href="adopt.html">Manage</a></li>
                 <li><a class="dropdown-item" href="login.html">Sign-up</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="create-pet.html">List Pet</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -58,6 +58,49 @@
   </section>
 
   <section>
+    <div class="container pt-4">
+      <div class="d-flex justify-content-between">
+        <div class="w-50">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort/Filter
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>       
+      </div>
+      <!--<div class="row"> 
+        <div class="col-md-4">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="col-md-2 align-items-end">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+  <section>
     <div class="container text-center" style="margin-top: 30px;">
       <div class="row">
         <div class="col">
@@ -66,7 +109,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="adopt.html" class="btn btn-primary">Go somewhere</a>
             </div>
             <div class="card-footer">
               <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -79,7 +122,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="adopt.html" class="btn btn-primary">Go somewhere</a>
             </div>
             <div class="card-footer">
               <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -92,7 +135,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="adopt.html" class="btn btn-primary">Go somewhere</a>
             </div>
             <div class="card-footer">
               <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -156,7 +199,7 @@
   </section>
 
   <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted" style="background-image: linear-gradient(to right, #a517ba, #5f1782);">
+  <footer class="text-center text-lg-start bg-light text-muted" style="background-image: linear-gradient(to right, #a517ba, #5f1782);">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white;">
     <!-- Left -->
@@ -275,9 +318,8 @@
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
   <!-- Copyright -->
-</footer>
-<!-- Footer -->
-  </section>
+  </footer>
+  <!-- Footer -->
 
 </body>
 </html>
