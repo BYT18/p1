@@ -24,12 +24,16 @@
     }
 
     .navbar{
-        background-image: linear-gradient(to right, #a517ba, #5f1782);
+        background-image: linear-gradient(to right, #009FFD, #2A2A72);
     }
 
     .banner{
-        background-image: linear-gradient(to right, #a517ba, #5f1782);
+        background-image: linear-gradient(to right, #009FFD, #2A2A72);
         color: white;
+    }
+
+    .foot{
+        background-image: linear-gradient(to right, #009FFD, #2A2A72);
     }
 
 
