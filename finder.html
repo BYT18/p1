@@ -18,44 +18,55 @@
 </head>
 <body>
   <!-- TODO: complete me --> 
-  <section class="nav">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">PetPal</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html" style="color: skyblue;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="finder.html" style="color: white;">Finder</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                Account
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="adopt.html">Manage</a></li>
-                <li><a class="dropdown-item" href="login.html">Sign-up</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="create-pet.html">List Pet</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <!--header-->
+    <section class="nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PetPal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: skyblue;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="finder.html" style="color: white;">Finder</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Shelter
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shelter-manage.html">Manage Account</a></li>
+                  <li><a class="dropdown-item" href="shelter-pet-manager.html">Manage Pets</a></li>
+                  <li><a class="dropdown-item" href="login.html">Sign-up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Seeker
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="seeker-account.html">Manage Account</a></li>
+                  <li><a class="dropdown-item" href="manage-adoptions.html">Manage Adoptions</a></li>
+                  <li><a class="dropdown-item" href="login.html">Sign-up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  </section>
+      </nav>
+    </section>
+    <!--header-->
 
   <section>
     <div class="container pt-4">
@@ -66,16 +77,29 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sort/Filter
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>       
+        <div class="row align-items-end">
+          <div class="col-md-auto">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="btnradio1">Grid</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio2">Map</label>
+            </div>
+          </div>
+          <div class="col-md-auto">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort/Filter
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sort by Price</a></li>
+                <li><a class="dropdown-item" href="#">Sort by Name</a></li>
+                <li><a class="dropdown-item" href="#">Sort by Distance</a></li>
+              </ul>
+            </div> 
+          </div>
+        </div>      
       </div>
       <!--<div class="row"> 
         <div class="col-md-4">
@@ -198,8 +222,8 @@
 
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-light text-muted" style="background-image: linear-gradient(to right, #a517ba, #5f1782);">
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-light text-muted foot">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: white;">
     <!-- Left -->
@@ -207,7 +231,6 @@
       <span>Get connected with us on social networks:</span>
     </div>
     <!-- Left -->
-
     <!-- Right -->
     <div>
       <a href="" class="me-4 text-reset">
