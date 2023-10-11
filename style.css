@@ -36,4 +36,74 @@
         background-image: linear-gradient(to right, #009FFD, #2A2A72);
     }
 
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px; 
+        border-radius: 5px;
+        color: white; 
+    }
+
+    @media (min-width: 768px) {
+        .carousel-inner {
+            height: 420px; /* Set height for larger screens */
+        }
+    }
+
+    @media (max-width: 390px) {
+        .carousel-inner {
+            height: 150px; /* Set height for smaller screens */
+        }
+    }
+
+    .bubble-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    
+      .bubble {
+        position: absolute;
+        background-color: lightskyblue; /* Grey color for bubbles */
+        border-radius: 50%;
+        animation: shakeBubbles 0.5s linear infinite;
+      }
+    
+      /* You can create multiple bubble classes with different sizes and positions */
+      .bubble.small {
+        width: 20px;
+        height: 20px;
+      }
+    
+      .bubble.medium {
+        width: 30px;
+        height: 30px;
+      }
+    
+      .bubble.large {
+        width: 50px;
+        height: 50px;
+      }
+    
+      /*@keyframes moveBubbles {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-100vh);
+        }
+      }*/
+
+      @keyframes shakeBubbles {
+        0% {
+          transform: translateX(-2px);
+        }
+        50% {
+          transform: translateX(2px);
+        }
+        100% {
+          transform: translateX(-2px);
+        }
+      }
+    
+
 
