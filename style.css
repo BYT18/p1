@@ -104,6 +104,27 @@
           transform: translateX(-2px);
         }
       }
-    
+.get-started-button {
+    background-color: cornflowerblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+    border-radius: 40px;
+}
+.get-started-text {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 48px;
+}
+.get-started-button:hover {
+    animation-duration: 1s;
+    animation-name: test;
+    background-color: blue;
+}
+@keyframes test {
+  0%   {background-color: cornflowerblue;}
+  100% {background-color: blue;}
+}
 
 
