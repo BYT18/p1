@@ -111,12 +111,14 @@
     text-align: center;
     padding: 30px;
     border-radius: 40px;
+    width: 40vw;
+    height: 15vh;
 }
 .get-started-text {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3vw;
 }
 .get-started-button:hover {
     animation-duration: 1s;
