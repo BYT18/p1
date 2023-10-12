@@ -122,6 +122,7 @@
     animation-name: test;
     background-color: blue;
 }
+
 @keyframes test {
   0%   {background-color: cornflowerblue;}
   100% {background-color: blue;}
