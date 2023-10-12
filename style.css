@@ -7,6 +7,7 @@
  * Fall 2023
  *
  */
+
     /* Style the header */
     * {
         margin: 0;
@@ -123,9 +124,24 @@
     background-color: blue;
 }
 
+.homecards{
+  background-color:lightgray!important;
+}
+
+.homecards:hover {
+  animation-duration: 1s;
+  animation-name: homeCard!important;
+  background-color: cornflowerblue!important;
+}
+
 @keyframes test {
   0%   {background-color: cornflowerblue;}
   100% {background-color: blue;}
+}
+
+@keyframes homeCard {
+  0%   {background-color: lightgray!important;}
+  100% {background-color: cornflowerblue!important;}
 }
 
 
