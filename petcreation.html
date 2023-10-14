@@ -41,6 +41,13 @@
         .card {
             margin-bottom: 20px;
         }
+
+        .centered-icon-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     </style>
 </head>
 
@@ -94,45 +101,162 @@
     <section class="adoptapp-background">
         <div class="container centered">
             <div class="col-md-6">
-                <h2 class="mb-4 text-center">Pet Creation Form</h2>
+                <h2 class="mb-4 text-center"><strong>Pet Creation Form</strong></h6>
 
-                <form>
+                <form class="row g-3 needs-validation" novalidate>
 
                     <!-- Basic Details -->
                     <div class="card">
                         <div class="card-body">
+                            <h5><strong>General Information</strong></h5>
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-dog"></i></span>
-                                    <input type="text" class="form-control" id="name" placeholder="Pet Name">
+                                <div class="col-md-12">
+                                    <label for="petName" class="form-label"><strong>Pet Name</strong></label>
+                                    <input type="text" class="form-control" id="petName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a pet name.
+                                    </div>
+                                </div>
+
+                                <!-- Animal Code -->
+                                <div class="col-md-12">
+                                    <label for="animalCode" class="form-label"><strong>Animal Code</strong></label>
+                                    <input type="text" class="form-control" id="animalCode" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid animal code.
+                                    </div>
+                                </div>
+
+                                <!-- Animal Type -->
+                                <div class="col-md-12">
+                                    <label for="animalType" class="form-label"><strong>Animal Type</strong></label>
+                                    <select class="form-select" id="animalType" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Dog</option>
+                                        <option>Cat</option>
+                                        <option>Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select an animal type.
+                                    </div>
+                                </div>
+
+                                <!-- Location -->
+                                <div class="col-md-12">
+                                    <label for="location" class="form-label"><strong>Location</strong></label>
+                                    <input type="text" class="form-control" id="location" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a location.
+                                    </div>
+                                </div>
+
+                                <!-- Gender -->
+                                <div class="col-md-12">
+                                    <label for="gender" class="form-label"><strong>Gender</strong></label>
+                                    <select class="form-select" id="gender" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a gender.
+                                    </div>
+                                </div>
+
+                                <!-- Age -->
+                                <div class="col-md-12">
+                                    <label for="age" class="form-label"><strong>Age</strong></label>
+                                    <input type="number" class="form-control" id="age" min="0" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid age.
+                                    </div>
+                                </div>
+
+                                <!-- Size -->
+                                <div class="col-md-12">
+                                    <label for="size" class="form-label"><strong>Size</strong></label>
+                                    <select class="form-select" id="size" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Small</option>
+                                        <option>Medium</option>
+                                        <option>Large</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a size.
+                                    </div>
+                                </div>
+
+                                <!-- Breed -->
+                                <div class="col-md-12">
+                                    <label for="breed" class="form-label"><strong>Breed</strong></label>
+                                    <input type="text" class="form-control" id="breed" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a breed.
+                                    </div>
+                                </div>
+
+                                <!-- Color -->
+                                <div class="col-md-12">
+                                    <label for="color" class="form-label"><strong>Color</strong></label>
+                                    <input type="text" class="form-control" id="color" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a color.
+                                    </div>
+                                </div>
+
+                                <!-- House Trained -->
+                                <div class="col-md-12">
+                                    <label for="houseTrained" class="form-label"><strong>House Trained</strong></label>
+                                    <select class="form-select" id="houseTrained" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please specify if the pet is house trained.
+                                    </div>
                                 </div>
                             </div>
-                            <!-- ... Other basic details ... -->
+
                         </div>
                     </div>
 
                     <!-- Personality Section -->
                     <div class="card">
                         <div class="card-body">
-                            <h5>Personality</h5>
-                            <div class="mb-3">
-                                <label>Personality Trait 1:</label>
-                                <input type="text" class="form-control mb-2" placeholder="Enter trait">
-                                <label>Personality Trait 2:</label>
-                                <input type="text" class="form-control mb-2" placeholder="Enter trait">
-                                <!-- Add more traits as needed -->
+                            <h5><strong>Personality</strong></h5>
+                            <div class="mb-2 row">
+                                <label for="personalityTrait" class="form-label fw-bold col-12">Personality Trait:</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="personalityTrait" placeholder="Enter personality trait" required>
+                                    <div class="invalid-feedback">
+                                        Personality trait is required.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2 mt-2 mt-md-0 d-flex">
+                                    <button type="button" class="btn btn-secondary w-100 centered-icon-btn"><i class="fas fa-plus"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><strong>Special Needs</strong></h5>
+                            <textarea class="form-control mb-3" id="allergies" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    
+                           
+
                     <!-- Health Section -->
                     <div class="card">
                         <div class="card-body">
-                            <h5>Health</h5>
+                            <h5><strong>Health</strong></h5>
 
-                            
-                            <h6 class="mb-3">Vaccinations</h6>
+
+                            <h4 class="mb-3">Vaccinations</h4>
                             <div class="row mb-2">
                                 <div class="col-12 mb-2">
                                     <label for="vaccinationName1" class="form-label fw-bold">Vaccination Name:</label>
@@ -149,8 +273,8 @@
                                 </div>
                             </div>
 
-                            
-                            <h6 class="mb-3">Surgeries</h6>
+
+                            <h4 class="mb-3">Surgeries</h4>
                             <div class="row mb-2">
                                 <div class="col-12 mb-2">
                                     <label for="surgeryName1" class="form-label fw-bold">Surgery Name:</label>
@@ -167,15 +291,15 @@
                                 </div>
                             </div>
 
-                            
-                            <h6 class="mb-3">Allergies</h6>
+
+                            <h4 class="mb-3">Allergies</h4>
                             <textarea class="form-control mb-3" id="allergies" rows="3"></textarea>
 
 
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-3">Create Pet</button>
                 </form>
             </div>
         </div>
