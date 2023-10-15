@@ -55,6 +55,25 @@
             display: block;
             width: 100%;
         }
+
+        .image-container {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            max-height: 100%;
+            width: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -108,20 +127,276 @@
     <section class="adoptapp-background">
         <div class="container centered">
             <div class="col-md-6">
-                <h2 class="mb-4 text-center"><strong>Update Pet</strong></h6>
+                <h2 class="mb-4 text-center"><strong>Pet Creation Form</strong></h6>
 
-                    <div class="container mt-5">
+                    <form class="row g-3 needs-validation" novalidate>
+
+                        <!-- Basic Details -->
                         <div class="card">
                             <div class="card-body">
+                                <h5><strong>General Information</strong></h5>
 
-                                
-                                
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Images:</label>
+                                    <div class="row mb-2">
+                                        <div class="col-sm-12 col-md-4 mb-3">
+                                            <!-- Placeholder for existing image 1 -->
+                                            <div class="image-container">
+                                                <img src="https://www.williamwalker.de/cdn/shop/articles/friendsofwilliamwalker_BreedProfileYorkshireTerrier4zu3_1024x.jpg?v=1628603961"
+                                                    alt="Pet Image 1" class="img-fluid">
+                                            </div>
+                                            <div class="btn-container mt-2">
+                                                <button type="button" class="btn btn-secondary btn-sm w-100"><i
+                                                        class="fas fa-upload"></i> Upload Image</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 mb-3">
+                                            <!-- Placeholder for existing image 2 -->
+                                            <div class="image-container">
+                                                <img src="https://dogtime.com/wp-content/uploads/sites/12/2011/01/GettyImages-1095667204-e1689790392229.jpg"
+                                                    alt="Pet Image 2" class="img-fluid">
+                                            </div>
+                                            <div class="btn-container mt-2">
+                                                <button type="button" class="btn btn-secondary btn-sm w-100"><i
+                                                        class="fas fa-upload"></i> Upload Image</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 mb-3">
+                                            <!-- Placeholder for existing image 3 -->
+                                            <div class="image-container">
+                                                <img src="https://cdn.britannica.com/49/233849-050-2ECC4F03/Yorkshire-terrier-dog-running.jpg"
+                                                    alt="Pet Image 3" class="img-fluid">
+                                            </div>
+                                            <div class="btn-container mt-2">
+                                                <button type="button" class="btn btn-secondary btn-sm w-100"><i
+                                                        class="fas fa-upload"></i> Upload Image</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <div class="col-md-12">
+                                        <label for="petName" class="form-label"><strong>Pet Name</strong></label>
+                                        <input type="text" class="form-control bg-light" id="petName" value="Fredrick"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide a pet name.
+                                        </div>
+                                    </div>
+
+                                    <!-- Animal Code -->
+                                    <div class="col-md-12">
+                                        <label for="animalCode" class="form-label"><strong>Animal Code</strong></label>
+                                        <input type="text" class="form-control bg-light" id="animalCode" value="#12345"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid animal code.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="status" class="form-label"><strong>Status</strong></label>
+                                        <input type="text" class="form-control bg-light" id="status" value="Available"
+                                            readonly>
+                                    </div>
+
+                                    <!-- Animal Type -->
+                                    <div class="col-md-12">
+                                        <label for="animalType" class="form-label"><strong>Animal Type</strong></label>
+                                        <input type="text" class="form-control bg-light" id="animalType" value="Dog"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please select an animal type.
+                                        </div>
+                                    </div>
+
+                                    <!-- Location -->
+                                    <div class="col-md-12">
+                                        <label for="location" class="form-label"><strong>Location</strong></label>
+                                        <input type="text" class="form-control bg-light" id="location"
+                                            value="Hamilton, Ontario" readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide a location.
+                                        </div>
+                                    </div>
+
+                                    <!-- Gender -->
+                                    <div class="col-md-12">
+                                        <label for="gender" class="form-label"><strong>Gender</strong></label>
+                                        <input type="text" class="form-control bg-light" id="gender" value="Male"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please select a gender.
+                                        </div>
+                                    </div>
+
+                                    <!-- Age -->
+                                    <div class="col-md-12">
+                                        <label for="age" class="form-label"><strong>Age</strong></label>
+                                        <input type="number" class="form-control bg-light" id="age" min="0" value="3"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid age.
+                                        </div>
+                                    </div>
+
+                                    <!-- Size -->
+                                    <div class="col-md-12">
+                                        <label for="size" class="form-label"><strong>Size</strong></label>
+                                        <input type="text" class="form-control bg-light" id="size" value="Small"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please select a size.
+                                        </div>
+                                    </div>
+
+                                    <!-- Breed -->
+                                    <div class="col-md-12">
+                                        <label for="breed" class="form-label"><strong>Breed</strong></label>
+                                        <input type="text" class="form-control bg-light" id="breed"
+                                            value="Yorkshire Terrier" readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide a breed.
+                                        </div>
+                                    </div>
+
+                                    <!-- Color -->
+                                    <div class="col-md-12">
+                                        <label for="color" class="form-label"><strong>Color</strong></label>
+                                        <input type="text" class="form-control bg-light" id="color"
+                                            value="Honey and Black" readonly>
+                                        <div class="invalid-feedback">
+                                            Please provide a color.
+                                        </div>
+                                    </div>
+
+                                    <!-- House Trained -->
+                                    <div class="col-md-12">
+                                        <label for="houseTrained" class="form-label"><strong>House
+                                                Trained</strong></label>
+                                        <input type="text" class="form-control bg-light" id="houseTrained" value="Yes"
+                                            readonly>
+                                        <div class="invalid-feedback">
+                                            Please specify if the pet is house trained.
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-            </div>
 
-        </div>
+                        <!-- Personality Section -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5><strong>Personality</strong></h5>
+                                <div class="mb-2 row">
+                                    <label for="personalityTrait" class="form-label fw-bold col-12">Personality
+                                        Trait:</label>
+                                    <div class="col-12 mb-2">
+                                        <input type="text" class="form-control bg-light" id="personalityTrait"
+                                            value="Curious Explorer" readonly>
+                                    </div>
+                                    <label for="personalityTrait" class="form-label fw-bold col-12">Personality
+                                        Trait:</label>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control bg-light" id="personalityTrait"
+                                            value="Playful Chaser" readonly>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5><strong>Special Needs</strong></h5>
+                                <textarea class="form-control mb-3 bg-light" id="specialNeeds" rows="3"
+                                    readonly>He likes walking a lot, hence he needs to be walked at least twice a day. He gets sick often, and needs to be taken to vet frequently.</textarea>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Health Section -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5><strong>Health</strong></h5>
+
+
+                                <h4 class="mb-3">Vaccinations</h4>
+                                <h6 class="mb-3">Vaccinations:</h6>
+
+                                <!-- Vaccination 1 -->
+                                <div class="row mb-2">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Vaccination Name:</label>
+                                        <input type="text" class="form-control bg-light" value="Rabies" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Date:</label>
+                                        <input type="date" class="form-control bg-light" value="2020-01-10" readonly>
+                                    </div>
+                                </div>
+
+                                <!-- Vaccination 2 -->
+                                <div class="row mb-2">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Vaccination Name:</label>
+                                        <input type="text" class="form-control bg-light" value="Distemper" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Date:</label>
+                                        <input type="date" class="form-control bg-light" value="2020-01-12" readonly>
+                                    </div>
+                                </div>
+
+                                <!-- Vaccination 3 -->
+                                <div class="row mb-2">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Vaccination Name:</label>
+                                        <input type="text" class="form-control bg-light" value="Parvovirus" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Date:</label>
+                                        <input type="date" class="form-control bg-light" value="2020-01-15" readonly>
+                                    </div>
+                                </div>
+
+
+                                <h4 class="mb-3">Surgeries</h4>
+                                <div class="row mb-2">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Surgery Name:</label>
+                                        <input type="text" class="form-control bg-light" value="Neutering" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold">Date:</label>
+                                        <input type="date" class="form-control bg-light" value="2021-02-05" readonly>
+                                    </div>
+                                </div>
+
+
+                                <h4 class="mb-3">Allergies</h4>
+                                <textarea class="form-control mb-3 bg-light" id="allergies" rows="3"
+                                    readonly>No known allergies.</textarea>
+
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">
+                                <i class="fas fa-pen"></i> Update Pet
+                            </button>
+                            <button type="button" class="btn btn-success">
+                                <i class="fas fa-save"></i> Save Changes
+                            </button>
+                        </div>
+                    </form>
+            </div>
         </div>
     </section>
 
