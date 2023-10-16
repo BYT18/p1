@@ -28,34 +28,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="finder.html" style="color: white;">Finder</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mx-2">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                 Shelter
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-start">
                 <li><a class="dropdown-item" href="shelter-manage.html">Manage Account</a></li>
                 <li><a class="dropdown-item" href="shelter-pet-manager.html">Manage Pets</a></li>
                 <li><a class="dropdown-item" href="login.html">Sign-up</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mx-4">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
                 Seeker
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-start">
                 <li><a class="dropdown-item" href="seeker-account.html">Manage Account</a></li>
                 <li><a class="dropdown-item" href="manage-adoptions.html">Manage Adoptions</a></li>
                 <li><a class="dropdown-item" href="login.html">Sign-up</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <div class="dropstart">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-bell" style="color: white;"></i>
+              </button>
+              <!--<div class="dropstart">
                 <button class="nav-link btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-bell" style="color: white;"></i>
                 </button>
@@ -64,6 +67,7 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+              </div>-->
               </div>
             </li>
           </ul>
@@ -72,14 +76,14 @@
     </nav>
   </section>
   <!--header-->
-
   <section class="banner text-sm-start text-center p-4">
     <div class="container">
       <div class="d-sm-flex justify-content-center align-items-center">
         <div>
-          <h1>Your Source for Dog</h1>
-          <p>Adopt a pet now</p>
-        </div>
+          <h1>Finding Forever Homes, One Paw at a Time.</h1>
+          <p>Welcome to <span style="color: lightgray; font-size: 25px; font-weight: bold;">PetPal</span>! At our site, we believe in the magic of companionship and the joy that pets bring to our lives. We're more than just a pet adoption platform; we're matchmakers, bringing together loving families and adorable pets in need of a home. Our dedicated team works tirelessly to ensure that every pet on our platform is not just a statistic, but a soul deserving of love and care. From playful kittens to loyal dogs and everything in between, our site is a virtual sanctuary where hearts meet furry paws.</p>
+      </div>
+      
         <img class="img-fluid" src="img/dog-png-30.png" alt="">
       </div>
     </div>
@@ -113,6 +117,26 @@
     </div>
   </section>-->
 
+  <section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item active" aria-current="true">Join us for our upcoming adoption events and fundraisers.</li>
+              <li class="list-group-item">Tips and tricks for taking care of your new pet. Ensure they have a happy and healthy life.</li>
+              <li class="list-group-item">Your adoption application has been reviewed. Please check your profile for updates.</li>
+              <li class="list-group-item">New pets available for adoption! Check them out!</li>
+              <li class="list-group-item">Congratulations! Your profile has been successfully created.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
   <!-- Cards Section -->
   <section class="container p-5">
     <div class="row">
