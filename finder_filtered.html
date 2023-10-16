@@ -90,30 +90,26 @@ display:inline;
 
 <section>
   <div class="container pt-4">
-    <div class="d-flex justify-content-between">
-      <div class="w-50">
-        <form class="d-flex" role="search">
-          <select class="form-control me-2">
-            <option value="">Select Location</option>
-            <option value="">San Francisco, CA</option>
-          </select>
-          <select style="width:50%" class="form-control me-2">
-            <option value="">Any Breed</option>
-            <option value="">Suspicious Dog</option>
-          </select>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+      <div class="row">
+        <div class="mb-3 mb-md-0">
+          <form class="d-flex">
+            <select class="form-control me-2">
+              <option value="">Select Location</option>
+              <option value="">San Francisco, CA</option>
+            </select>
+            <select style="width:60%" class="form-control me-2">
+              <option value="">Any Breed</option>
+              <option value="">Suspicious Dog</option>
+            </select>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-      <div class="row align-items-end">
-        <!--<div class="col-md-auto">
-          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1">Grid</label>
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Map</label>
-          </div>
-        </div>-->
+      <div class="w-100 d-md-none d-block m-3"></div>
+
+      <div class="row justify-content-end">
         <div style="margin-left:5px; margin-bottom:5px;" class="col-md-auto">
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" style="background-color:#2659F4;border-color:#2659F4;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -129,7 +125,7 @@ display:inline;
         <div style="margin-left:5px; margin-bottom:5px;" class="col-md-auto">
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" style="background-color:#1548F3;border-color:#2659F4;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Filter options
+              Extra Filters
             </button>
             <ul class="dropdown-menu">
               <form action="./finder_filtered.html">
