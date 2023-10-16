@@ -88,82 +88,61 @@
   </section>
   <!--header-->
 
-<section>
+  <section>
     <section class="h-100 gradient-custom-2">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-lg-9 col-xl-7">
-                    <div class="card">
-                        <h2 style="padding-left: 25px; padding-top: 30px; font-weight: bold;">Edit Profile</h2>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
+                    <div class="card" style="overflow-y: auto; max-height: 90vh;">
+                        <h2 class="px-4 pt-4 font-weight-bold">Edit Profile</h2>
                         <hr>
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">Background Color</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="color" value="#5f9ea0">
-                                </div>
+                          <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>Background Color</strong></label>
+                            <div class="col-sm-9">
+                                <input type="color" value="#5f9ea0">
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">Profile Picture</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="file">
-                                    <p class="mb-0" style="margin-top: 12px;">Current Photo:</p>
-                                    <img src="img/user.jpeg" style="margin-top: 20px; border: 1px solid black; border-radius: 5px;">
-                                </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>Profile Picture</strong></label>
+                            <div class="col-sm-9">
+                                <input type="file">
+                                <p class="my-2">Current Photo:</p>
+                                <img src="img/user.jpeg" class="mt-2" style="border: 1px solid black; border-radius: 5px; max-width: 100%;">
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">Username</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="text" class="text-muted mb-0" style="width:70%;border:0px;" value="Petpal User">
-                                </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>Username</strong></label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" value="Petpal User">
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">Email</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="text" class="text-muted mb-0" style="width:70%;border:0px;" value="petpaluser@gmail.com">
-                                </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>Email</strong></label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" value="petpaluser@gmail.com">
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">Mobile</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="text" class="text-muted mb-0" style="width:70%;border:0px;" value="(098) 765-4321">
-                                </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>Mobile</strong></label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" value="(098) 765-4321">
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">City</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <input type="text" class="text-muted mb-0" style="width:70%;border:0px;" value="Toronto">
-                                </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>City</strong></label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" value="Toronto">
                             </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <p class="mb-0">About</p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <textarea class="text-muted mb-0" style="width:70%; border:0px;" cols="50">I'm a Web Developer based in Toronto. I have 3 dogs and 1 cat that I love!</textarea>
-                                </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label"><strong>About</strong></label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" rows="3">I'm a Web Developer based in Toronto. I have 3 dogs and 1 cat that I love!</textarea>
                             </div>
-                            <hr>
-                            <div style="width:100%;text-align:right;" class="align-self-end mx-3">
-                                <a class="btn btn-outline-success" href="seeker-account.html" style="margin-bottom:10px;margin-right:30px;">Save</a>
+                        </div>
+                            <div class="d-flex justify-content-end">
+                                <a class="btn btn-outline-success mb-3 mr-3" href="seeker-account.html">Save</a>
                             </div>
                         </div>
                     </div>
@@ -172,6 +151,9 @@
         </div>
     </section>
 </section>
+
+  
+
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted foot">
