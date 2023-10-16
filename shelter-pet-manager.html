@@ -36,11 +36,7 @@ filter: opacity(100%);
 h6{
 display:inline;
 }
-@media (max-width: 390px) {
-         {
-            height: 150px; /* Set height for smaller screens */
-        }
-    }
+
 
   </style>
 </head>
@@ -96,7 +92,7 @@ display:inline;
   </section>
   <!--header-->
 
-  <section>
+  <!--<section>
     <div class="container pt-4">
       <div class="d-flex justify-content-between">
         <div class="w-50">
@@ -106,15 +102,6 @@ display:inline;
           </form>
         </div>
         <div class="row align-items-end">
-          <!--<div class="col-md-auto">
-              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                  <label class="btn btn-outline-primary" for="btnradio1">Grid</label>
-
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio2">Map</label>
-              </div>
-          </div>-->
           <div style="margin-left:5px; margin-bottom:5px;" class="col-md-auto">
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" style="background-color:#2659F4;border-color:#2659F4;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -184,7 +171,97 @@ display:inline;
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
+
+  <section>
+    <div class="container pt-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="row">
+            <div class="mb-3 mb-md-0">
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="w-100 d-md-none d-block m-3"></div>
+
+          <div class="row justify-content-end">
+            <div class="col p-0 mb-3 mb-md-0">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Sort
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Sort by Age (Ascending)</a></li>
+                      <li><a class="dropdown-item" href="#">Sort by Breed Name (A-Z)</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col p-0 mb-3 mb-md-0">
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Filter options
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <form>
+
+                      <div style="width:350px;padding-left:10px;padding-bottom:5px;padding-right:10px;padding-top:10px;">
+                        <div style="padding-bottom:10px;">
+                          <h6>Select animal:</h6>
+                          <label for="Dog"  style="margin-left:20px;">Dog</label>
+                          <label>
+                            <input type="radio" id="Dog" name="select" value="small" checked>
+                            <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                          </label>
+                          <label style="padding-left:12px;" for="Cat">Cat</label>
+                          <label>
+                            <input type="radio" id="Cat" name="select" value="small" checked>
+                            <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
+                          </label>
+                          <label style="padding-left:12px;" for="Other">Other</label>
+                          <label>
+                            <input type="radio" id="Other" name="select" value="small" checked>
+                            <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
+                          </label>
+                        </div>
+                        <div>
+                          <h6>Pet Age:</h6>
+                          <label style="padding-left:45px;" for="young" style="margin-left:5px;">Young</label>
+                          <label>
+                            <input type="radio" id="young" name="age" value="small" checked>
+                            <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                          </label>
+                          <label style="padding-left:10px;" for="old">Old</label>
+                          <label>
+                            <input type="radio" id="old" name="age" value="small" checked>
+                            <img style="width:15px; " src="./img/cat_paw.png" alt="Option 1">
+                          </label>
+                          <label style="padding-left:31px;" for="all">All</label>
+                          <label>
+                            <input type="radio" id="all" name="age" value="small" checked>
+                            <img style="width:15px; " src="./img/bird_claw.png" alt="Option 1">
+                          </label>
+                        </div>
+                        <input class="btn btn-outline-success" style="margin-top:20px;padding-right:10px;padding-left:10px;margin-left:210px;" type="submit" value="Apply Filter">
+                      </div>
+    
+                    </form>
+                  </ul>
+              </div>
+          </div>
+          <div class="col">
+              <a class="btn btn-outline-success" href="#" style="font-size: small;">Reset Filter/Sort</a>
+          </div>
+
+          </div>
+        </div>
+    </div>
+</section>
+
 
   <section>
     <div class="container text-center" style="margin-top: 30px;">
@@ -197,7 +274,14 @@ display:inline;
             </div>
           </div>
         </div>
+
         <div class="col" style="margin-bottom:5px;">
+
+
+        <div class="w-100 d-md-none d-block m-3"></div>
+
+        <div class="col">
+
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -242,7 +326,15 @@ display:inline;
             </div>
           </div>
         </div>
+
         <div class="col" style="margin-bottom:5px;">
+
+
+        
+        <div class="w-100 d-md-none d-block m-3"></div>
+
+        <div class="col">
+
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -334,7 +426,13 @@ display:inline;
             </div>
           </div>
         </div>
+
         <div class="col" style="margin-bottom:5px;">
+
+
+        <div class="w-100 d-md-none d-block m-3"></div>
+        
+        <div class="col">
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -379,7 +477,14 @@ display:inline;
             </div>
           </div>
         </div>
+
         <div class="col" style="margin-bottom:5px;">
+
+
+        
+        <div class="w-100 d-md-none d-block m-3"></div>
+
+        <div class="col">
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
