@@ -26,12 +26,12 @@
 /* IMAGE STYLES */
 [type=radio] + img {
   cursor: pointer;
-  filter: opacity(50%)
+  filter: opacity(30%);
 }
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-filter: opacity(100%)
+filter: opacity(100%);
 }
 h6{
 display:inline;
@@ -266,7 +266,7 @@ display:inline;
   <section>
     <div class="container text-center" style="margin-top: 30px;">
       <div class="row">
-        <div class="col">
+        <div class="col" style="margin-bottom:5px;">
           <div class="card h-100">
             <div class="card-body m-5 p-5">
                 <a href="create-pet.html"> <i class="bi bi-patch-plus-fill" style="font-size: 70px;"></i></a>
@@ -275,71 +275,160 @@ display:inline;
           </div>
         </div>
 
+        <div class="col" style="margin-bottom:5px;">
+
+
         <div class="w-100 d-md-none d-block m-3"></div>
 
         <div class="col">
+
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Jake</h5>
+              <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Jake</a></h5>
               <p class="card-text">Breed: Suspicious Dog</p>
+              <p class="card-text">Gender: Male</p>
               <p class="card-text">Age: 1 yrs old</p>
-              <div style="width:50%;text-align:left;display:inline-block;">
-                <a href="adopt.html" class="btn btn-primary" style="margin-top:10px;">Edit</a>
+              <p class="card-text">Size: 1 meter</p>
+              <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+              <div style="white-space:nowrap;display:inline;">
+                <label for="a"  style="margin-left:20px;">Available</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jakes Current Availability?')" type="radio" id="a" name="av1" value="small" checked>
+                  <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                </label>
               </div>
-              <div style="width:50%;text-align:right;display:inline;right:0">
-                <a href="adopt.html" class="btn btn-primary" style="background-color:#C80815;border-color:#C80815;margin-top:10px;">Delete</a>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="b">Adopted</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jakes Current Availability?')" type="radio" id="b" name="av1" value="small">
+                  <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="c">Pending</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jakes Current Availability?')" type="radio" id="c" name="av1" value="small">
+                  <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+              <label style="padding-left:12px;" for="d">Withdrawn</label>
+              <label>
+                <input onclick="return confirm('Are you sure you would like to change Jakes Current Availability?')" type="radio" id="d" name="av1" value="small">
+                <img style="width:15px;" src="./img/fish-tail.png" alt="Option 1">
+              </label>
               </div>
             </div>
+            <p class="card-text">Location: San Francisco, CA</p>
             <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+              <small class="text-body-secondary">Published: 22/12/2022</small>
             </div>
           </div>
         </div>
+
+        <div class="col" style="margin-bottom:5px;">
+
 
         
         <div class="w-100 d-md-none d-block m-3"></div>
 
         <div class="col">
+
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Jack</h5>
+              <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Jack</a></h5>
               <p class="card-text">Breed: Suspicious Dog</p>
+              <p class="card-text">Gender: Male</p>
               <p class="card-text">Age: 2 yrs old</p>
-              <div style="width:50%;text-align:left;display:inline-block;">
-                <a href="adopt.html" class="btn btn-primary" style="margin-top:10px;">Edit</a>
+              <p class="card-text">Size: 1 meter</p>
+              <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+              <div style="white-space:nowrap;display:inline;">
+                <label for="a2"  style="margin-left:20px;">Available</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jacks Current Availability?')" type="radio" id="a2" name="av2" value="small" checked>
+                  <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                </label>
               </div>
-              <div style="width:50%;text-align:right;display:inline;right:0">
-                <a href="adopt.html" class="btn btn-primary" style="background-color:#C80815;border-color:#C80815;margin-top:10px;">Delete</a>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="b2">Adopted</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jacks Current Availability?')" type="radio" id="b2" name="av2" value="small">
+                  <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="c2">Pending</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jacks Current Availability?')" type="radio" id="c2" name="av2" value="small">
+                  <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="d2">Withdrawn</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Jacks Current Availability?')" type="radio" id="d2" name="av2" value="small">
+                  <img style="width:15px;" src="./img/fish-tail.png" alt="Option 1">
+                </label>
               </div>
             </div>
+            <p class="card-text">Location: San Francisco, CA</p>
             <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+              <small class="text-body-secondary">Published: 22/12/2022</small>
             </div>
           </div>
         </div>
       </div>
       <div class="row py-5">
-        <div class="col">
+        <div class="col" style="margin-bottom:5px;">
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Sammi</h5>
+              <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Sammi</a></h5>
               <p class="card-text">Breed: Suspicious Dog</p>
+              <p class="card-text">Gender: Male</p>
               <p class="card-text">Age: 5 yrs old</p>
-              <div style="width:50%;text-align:left;display:inline-block;">
-                <a href="adopt.html" class="btn btn-primary" style="margin-top:10px;">Edit</a>
+              <p class="card-text">Size: 1 meter</p>
+              <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+              <div style="white-space:nowrap;display:inline;">
+                <label for="a3"  style="margin-left:20px;">Available</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Sammis Current Availability?')" type="radio" id="a3" name="av3" value="small">
+                  <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                </label>
               </div>
-              <div style="width:50%;text-align:right;display:inline;right:0">
-                <a href="adopt.html" class="btn btn-primary" style="background-color:#C80815;border-color:#C80815;margin-top:10px;">Delete</a>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="b3">Adopted</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Sammis Current Availability?')" type="radio" id="b3" name="av3" value="small">
+                  <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="c3">Pending</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Sammis Current Availability?')" type="radio" id="c3" name="av3" value="small" checked>
+                  <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="d3">Withdrawn</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Sammis Current Availability?')" type="radio" id="d3" name="av3" value="small">
+                  <img style="width:15px;" src="./img/fish-tail.png" alt="Option 1">
+                </label>
               </div>
             </div>
+            <p class="card-text">Location: San Francisco, CA</p>
             <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+              <small class="text-body-secondary">Published: 22/12/2022</small>
             </div>
           </div>
         </div>
+
+        <div class="col" style="margin-bottom:5px;">
+
 
         <div class="w-100 d-md-none d-block m-3"></div>
         
@@ -347,21 +436,50 @@ display:inline;
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Poodle</h5>
+              <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Poodle</a></h5>
               <p class="card-text">Breed: Suspicious Dog</p>
+              <p class="card-text">Gender: Male</p>
               <p class="card-text">Age: 6 mnths old</p>
-              <div style="width:50%;text-align:left;display:inline-block;">
-                <a href="adopt.html" class="btn btn-primary" style="margin-top:10px;">Edit</a>
+              <p class="card-text">Size: 1 meter</p>
+              <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+              <div style="white-space:nowrap;display:inline;">
+                <label for="a5"  style="margin-left:20px;">Available</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Poodles Current Availability?')" type="radio" id="a5" name="av4" value="small">
+                  <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                </label>
               </div>
-              <div style="width:50%;text-align:right;display:inline;right:0;">
-                <a href="adopt.html" class="btn btn-primary" style="background-color:#C80815;border-color:#C80815;margin-top:10px;">Delete</a>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="b5">Adopted</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Poodles Current Availability?')" type="radio" id="b5" name="av4" value="small" checked>
+                  <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="c5">Pending</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Poodles Current Availability?')" type="radio" id="c5" name="av4" value="small">
+                  <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="d5">Withdrawn</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Poodles Current Availability?')" type="radio" id="d5" name="av4" value="small">
+                  <img style="width:15px;" src="./img/fish-tail.png" alt="Option 1">
+                </label>
               </div>
             </div>
+            <p class="card-text">Location: San Francisco, CA</p>
             <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+              <small class="text-body-secondary">Published: 22/12/2022</small>
             </div>
           </div>
         </div>
+
+        <div class="col" style="margin-bottom:5px;">
+
 
         
         <div class="w-100 d-md-none d-block m-3"></div>
@@ -370,18 +488,44 @@ display:inline;
           <div class="card h-100">
             <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Zack</h5>
+              <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Zack</a></h5>
               <p class="card-text">Breed: Suspicious Dog</p>
+              <p class="card-text">Gender: Male</p>
               <p class="card-text">Age: 4 yrs old</p>
-              <div style="width:50%;text-align:left;display:inline-block;">
-                <a href="adopt.html" class="btn btn-primary" style="margin-top:10px;">Edit</a>
+              <p class="card-text">Size: 1 meter</p>
+              <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+              <div style="white-space:nowrap;display:inline;">
+                <label for="a4"  style="margin-left:20px;">Available</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Zacks Current Availability?')" type="radio" id="a4" name="av5" value="small">
+                  <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                </label>
               </div>
-              <div style="width:50%;text-align:right;display:inline;right:0">
-                <a href="adopt.html" class="btn btn-primary" style="background-color:#C80815;border-color:#C80815;margin-top:10px;">Delete</a>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="b4">Adopted</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Zacks Current Availability?')" type="radio" id="b4" name="av5" value="small">
+                  <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="c4">Pending</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Zacks Current Availability?')" type="radio" id="c4" name="av5" value="small">
+                  <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
+                </label>
+              </div>
+              <div style="white-space:nowrap;display:inline;">
+                <label style="padding-left:12px;" for="d4">Withdrawn</label>
+                <label>
+                  <input onclick="return confirm('Are you sure you would like to change Zacks Current Availability?')" type="radio" id="d4" name="av5" value="small" checked>
+                  <img style="width:15px;" src="./img/fish-tail.png" alt="Option 1">
+                </label>
               </div>
             </div>
+            <p class="card-text">Location: San Francisco, CA</p>
             <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+              <small class="text-body-secondary">Published: 22/12/2022</small>
             </div>
           </div>
       </div>

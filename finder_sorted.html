@@ -26,7 +26,7 @@
 /* IMAGE STYLES */
 [type=radio] + img {
   cursor: pointer;
-  filter: opacity(50%)
+  filter: opacity(30%)
 }
 
 /* CHECKED STYLES */
@@ -77,9 +77,9 @@ display:inline;
                 <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
-                </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
@@ -93,19 +93,26 @@ display:inline;
         <div class="d-flex justify-content-between">
             <div class="w-50">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <select class="form-control me-2">
+                        <option value="">Select Location</option>
+                        <option value="">San Francisco, CA</option>
+                    </select>
+                    <select style="width:50%" class="form-control me-2">
+                        <option value="">Any Breed</option>
+                        <option value="">Suspicious Dog</option>
+                    </select>
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
             <div class="row align-items-end">
                 <!--<div class="col-md-auto">
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">Grid</label>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Grid</label>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio2">Map</label>
-                    </div>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Map</label>
+                  </div>
                 </div>-->
                 <div style="margin-left:5px; margin-bottom:5px;" class="col-md-auto">
                     <div class="dropdown">
@@ -113,8 +120,9 @@ display:inline;
                             Sort
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a style="padding-right:20px;" class="dropdown-item" href="#">Sort by Age (Ascending)</a></li>
-                            <li><a style="padding-right:20px;" class="dropdown-item" href="#">Sort by Breed Name (A-Z)</a></li>
+                            <li><a style="padding-right:20px;" class="dropdown-item" href="./finder_sorted.html">Sort by Age</a></li>
+                            <li><a style="padding-right:20px;" class="dropdown-item" href="#">Sort by Name</a></li>
+                            <li><a style="padding-right:20px;" class="dropdown-item" href="#">Sort by Size</a></li>
                         </ul>
                     </div>
                 </div>
@@ -124,48 +132,60 @@ display:inline;
                             Filter options
                         </button>
                         <ul class="dropdown-menu">
-                            <form>
+                            <form action="./finder_filtered.html">
 
                                 <div style="width:350px;padding-left:10px;padding-bottom:5px;padding-right:10px;padding-top:10px;">
                                     <div style="padding-bottom:10px;">
-                                        <h6>Select animal:</h6>
-                                        <label for="Dog"  style="margin-left:20px;">Dog</label>
+                                        <h6>Pet Size:</h6>
+                                        <label for="Small"  style="margin-left:20px;">Small</label>
                                         <label>
-                                            <input type="radio" id="Dog" name="select" value="small" checked>
+                                            <input type="radio" id="Small" name="select" value="small">
                                             <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
                                         </label>
-                                        <label style="padding-left:12px;" for="Cat">Cat</label>
+                                        <label style="padding-left:12px;" for="Medium">Medium</label>
                                         <label>
-                                            <input type="radio" id="Cat" name="select" value="small" checked>
+                                            <input type="radio" id="Medium" name="select" value="small">
                                             <img style="width:15px;" src="./img/cat_paw.png" alt="Option 1">
                                         </label>
-                                        <label style="padding-left:12px;" for="Other">Other</label>
+                                        <label style="padding-left:17px;" for="Large">Large</label>
                                         <label>
-                                            <input type="radio" id="Other" name="select" value="small" checked>
+                                            <input type="radio" id="Large" name="select" value="small">
                                             <img style="width:15px;" src="./img/bird_claw.png" alt="Option 1">
                                         </label>
                                     </div>
-                                    <div>
+                                    <div style="padding-bottom:10px;">
                                         <h6>Pet Age:</h6>
-                                        <label style="padding-left:45px;" for="young"  style="margin-left:5px;">Young</label>
+                                        <label style="padding-left:14px;" for="young"  style="margin-left:5px;">Young</label>
                                         <label>
-                                            <input type="radio" id="young" name="age" value="small" checked>
+                                            <input type="radio" id="young" name="age" value="small">
                                             <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
                                         </label>
-                                        <label style="padding-left:10px;" for="old">Old</label>
+                                        <label style="padding-left:33px;" for="old">Adult</label>
                                         <label>
-                                            <input type="radio" id="old" name="age" value="small" checked>
+                                            <input type="radio" id="old" name="age" value="small">
                                             <img style="width:15px; " src="./img/cat_paw.png" alt="Option 1">
                                         </label>
-                                        <label style="padding-left:31px;" for="all">All</label>
+                                        <label style="padding-left:10px;" for="senior">Senior</label>
                                         <label>
-                                            <input type="radio" id="all" name="age" value="small" checked>
+                                            <input type="radio" id="senior" name="age" value="small">
                                             <img style="width:15px; " src="./img/bird_claw.png" alt="Option 1">
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <h6>Pet Sex:</h6>
+                                        <label style="padding-left:27px;" for="male"  style="margin-left:5px;">Male</label>
+                                        <label>
+                                            <input type="radio" id="male" name="sex" >
+                                            <img style="width:15px; " src="./img/dog_paw.png" alt="Option 1">
+                                        </label>
+                                        <label style="padding-left:21px;" for="female">Female</label>
+                                        <label>
+                                            <input type="radio" id="female" name="sex" >
+                                            <img style="width:15px; " src="./img/cat_paw.png" alt="Option 1">
                                         </label>
                                     </div>
                                     <input class="btn btn-outline-success" style="margin-top:20px;padding-right:10px;padding-left:10px;margin-left:210px;" type="submit" value="Apply Filter">
                                 </div>
-
                             </form>
                         </ul>
                     </div>
@@ -206,13 +226,17 @@ display:inline;
                 <div class="card h-100">
                     <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Poodle</h5>
+                        <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Poodle</a></h5>
                         <p class="card-text">Breed: Suspicious Dog</p>
+                        <p class="card-text">Gender: Male</p>
                         <p class="card-text">Age: 6 mnths old</p>
-                        <a href="adopt.html" class="btn btn-primary">Learn More</a>
+                        <p class="card-text">Size: 1 meter</p>
+                        <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+                        <p class="card-text">Location: San Francisco, CA</p>
+                        <a href="petdetail.html" class="btn btn-primary">Find out about Poodle</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <small class="text-body-secondary">Published: 22/12/2022</small>
                     </div>
                 </div>
             </div>
@@ -220,13 +244,17 @@ display:inline;
                 <div class="card h-100">
                     <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Jake</h5>
+                        <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Jake</a></h5>
                         <p class="card-text">Breed: Suspicious Dog</p>
+                        <p class="card-text">Gender: Male</p>
                         <p class="card-text">Age: 1 yrs old</p>
-                        <a href="adopt.html" class="btn btn-primary">Learn More</a>
+                        <p class="card-text">Size: 1 meter</p>
+                        <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+                        <p class="card-text">Location: San Francisco, CA</p>
+                        <a href="petdetail.html" class="btn btn-primary">Find out about Jake</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <small class="text-body-secondary">Published: 22/12/2022</small>
                     </div>
                 </div>
             </div>
@@ -234,13 +262,17 @@ display:inline;
                 <div class="card h-100">
                     <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Jack</h5>
+                        <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Jack</a></h5>
                         <p class="card-text">Breed: Suspicious Dog</p>
+                        <p class="card-text">Gender: Male</p>
                         <p class="card-text">Age: 2 yrs old</p>
-                        <a href="adopt.html" class="btn btn-primary">Learn More</a>
+                        <p class="card-text">Size: 1 meter</p>
+                        <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+                        <p class="card-text">Location: San Francisco, CA</p>
+                        <a href="petdetail.html" class="btn btn-primary">Find out about Jack</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <small class="text-body-secondary">Published: 22/12/2022</small>
                     </div>
                 </div>
             </div>
@@ -250,13 +282,35 @@ display:inline;
                 <div class="card h-100">
                     <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Zack</h5>
+                        <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Sammi</a></h5>
                         <p class="card-text">Breed: Suspicious Dog</p>
+                        <p class="card-text">Gender: Male</p>
+                        <p class="card-text">Age: 3 yrs old</p>
+                        <p class="card-text">Size: 1 meter</p>
+                        <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+                        <p class="card-text">Location: San Francisco, CA</p>
+                        <a href="petdetail.html" class="btn btn-primary">Find out about Poodle</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Published: 22/12/2022</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Zack</a></h5>
+                        <p class="card-text">Breed: Suspicious Dog</p>
+                        <p class="card-text">Gender: Male</p>
                         <p class="card-text">Age: 4 yrs old</p>
-                        <a href="adopt.html" class="btn btn-primary">Learn More</a>
+                        <p class="card-text">Size: 1 meter</p>
+                        <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+                        <p class="card-text">Location: San Francisco, CA</p>
+                        <a href="petdetail.html" class="btn btn-primary">Find out about Zack</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <small class="text-body-secondary">Published: 22/12/2022</small>
                     </div>
                 </div>
             </div>
@@ -264,27 +318,17 @@ display:inline;
                 <div class="card h-100">
                     <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Sammi</h5>
+                        <h5 class="card-title"><a style="text-decoration:none;color:black;" href="adopt.html">Habib</a></h5>
                         <p class="card-text">Breed: Suspicious Dog</p>
-                        <p class="card-text">Age: 5 yrs old</p>
-                        <a href="adopt.html" class="btn btn-primary">Learn More</a>
+                        <p class="card-text">Gender: Male</p>
+                        <p class="card-text">Age: 6 yrs old</p>
+                        <p class="card-text">Size: 1 meter</p>
+                        <p class="card-text">Description: This is a very suspicious dog, but it will vibe with you</p>
+                        <p class="card-text">Location: San Francisco, CA</p>
+                        <a href="petdetail.html" class="btn btn-primary">Find out about Habib</a>
                     </div>
                     <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://i.kym-cdn.com/entries/icons/original/000/041/444/sdc.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Habib</h5>
-                        <p class="card-text">Breed: Suspicious Dog</p>
-                        <p class="card-text">Age: 9 yrs old</p>
-                        <a href="adopt.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        <small class="text-body-secondary">Published: 22/12/2022</small>
                     </div>
                 </div>
             </div>
