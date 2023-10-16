@@ -238,6 +238,7 @@
             <div class="fw-bold">John Doglover: This place is good</div>
             This is a positive review
           </div>
+          <button type="button" class="btn btn-primary rounded-pill mx-2" data-bs-toggle="modal" data-bs-target="#Modal">Reply</button>
           <span class="badge bg-primary rounded-pill">4.5/5.0</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -245,6 +246,7 @@
             <div class="fw-bold">Jack Doghater: This place stinks</div>
             This is a negative review
           </div>
+          <button type="button" class="btn btn-primary rounded-pill mx-2" data-bs-toggle="modal" data-bs-target="#Modal">Reply</button>
           <span class="badge bg-primary rounded-pill">1.0/5.0</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -252,12 +254,32 @@
             <div class="fw-bold">Norm Normalson: Solid place for pets</div>
             This is a mediocre review
           </div>
+          <button type="button" class="btn btn-primary rounded-pill mx-2" data-bs-toggle="modal" data-bs-target="#Modal">Reply</button>
           <span class="badge bg-primary rounded-pill">3.0/5.0</span>
         </li>
       </ol>
     </div>
   </section>
 
+  <!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Reply</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <textarea class="form-control" aria-label="With textarea" placeholder="Reply to review" style="margin-bottom:10px;" id="review"></textarea>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-light text-muted foot">
     <!-- Section: Social media -->
